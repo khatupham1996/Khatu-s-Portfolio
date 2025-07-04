@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Kha Tu Pham — Web Developer Portfolio" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.2.1/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.2.1/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./src/css/general.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- App Logic -->
+    <script type="module" src="./src/js/controller.js" defer></script>
+
+    <title>Kha Tu Pham | Web Developer Portfolio</title>
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================ -->
+    <header class="header">
+      <a href="#home" class="logo">KT</a>
+
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a href="#home" class="main-nav-link">Home</a></li>
+          <li><a href="#projects" class="main-nav-link">Projects</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>
+          <li><a href="#about" class="main-nav-link">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ================= MAIN ================== -->
+    <main>
+      <!-- ---------- Hero ---------- -->
+      <section class="section-hero" id="home">
+        <div class="hero container grid grid--2-cols">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">Front-End Developer</h1>
+            <p class="hero-description">
+              Hi, I'm Kha Tu Pham — a passionate Computer Science major focused
+              on crafting responsive, performant and accessible web experiences.
+            </p>
+
+            <a href="#contact" class="btn btn--full margin-right-sm">Hire Me</a>
+            <a href="#projects" class="btn btn--outline"
+              >See Projects &nbsp;&darr;</a
+            >
+
+            <div class="social-links">
+              <a
+                href="https://github.com/khatupham1996?tab=repositories"
+                class="social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/kha-tu-pham-6aba85287/"
+                class="social-link"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+              <a href="mailto:khatupham96@example.com" class="social-link">
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-img-box">
+            <img src="./src/img/khatu.jpg" alt="Kha Tu Pham" class="hero-img" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Projects ---------- -->
+      <section class="section-portfolio" id="projects">
+        <div class="container">
+          <span class="subheading">Featured Work</span>
+          <h2 class="heading-secondary">My Projects</h2>
+
+          <div class="grid grid--2-cols">
+            <!-- Project 1 -->
+            <div class="project-text-box">
+              <p class="project-number">01</p>
+              <h3 class="heading-tertiary">Journal Blog</h3>
+              <p class="project-description">
+                Journal Blog is a Django-powered blogging platform where users
+                can effortlessly record and share their daily life, thoughts,
+                and experiences. It features intuitive post management, category
+                organization, dynamic search and filtering, customizable user
+                profiles, and a responsive, mobile-friendly interface built with
+                Tailwind CSS.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Sqlite</span>
+              </div>
+              <a
+                href="https://github.com/khatupham1996/Journal-Blog-App"
+                class="project-link"
+                target="_blank"
+                >View Case Study &rarr;</a
+              >
+            </div>
+            <div class="project-img-box">
+              <img
+                src="./src/img/Project 1.png"
+                class="project-img"
+                alt="Journal Blog"
+              />
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-img-box">
+              <img
+                src="./src/img/Project 2.png"
+                class="project-img"
+                alt="Forkify Recipe"
+              />
+            </div>
+            <div class="project-text-box">
+              <p class="project-number">02</p>
+              <h3 class="heading-tertiary">Forkify Recipe</h3>
+              <p class="project-description">
+                Welcome to Forkify, an interactive pizza recipe platform built
+                with HTML, CSS, and JavaScript! Seamlessly browse thousands of
+                delicious pizza recipes using modern JavaScript's Fetch API to
+                retrieve data from a RESTful API. Customize recipes to your
+                liking, manage your favorites, and enjoy an intuitive user
+                experience created with clean, responsive CSS styling.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">HTML</span>
+                <span class="tech-tag">CSS</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">RESTful API</span>
+              </div>
+              <a
+                href="https://forkify-application-khatu.netlify.app/"
+                class="project-link"
+                target="_blank"
+                >Live Demo &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ---------- Contact ---------- -->
+      <!-- CONTACT SECTION -->
+      <section class="section-cta" id="contact">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get in Touch</h2>
+
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/xgvyqadq"
+                method="POST"
+                class="cta-form"
+              >
+                <div class="form-group">
+                  <label for="full-name">Full Name</label>
+                  <input
+                    id="full-name"
+                    name="name"
+                    type="text"
+                    placeholder="John Smith"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="hello@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Let’s build something amazing…"
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <!-- Tell Formspree we want a JSON response (needed for AJAX) -->
+                <input type="hidden" name="_format" value="json" />
+
+                <!-- Optional redirect after success -->
+                <!-- <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html" /> -->
+
+                <!-- Basic spam honeypot (hidden from humans) -->
+                <input type="text" name="_gotcha" style="display: none" />
+
+                <button type="submit" class="btn btn--full">
+                  Send Message
+                </button>
+              </form>
+
+              <!-- Inline status feedback -->
+              <div id="form-status" class="form-status"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================ -->
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright">
+          &copy; <span id="year"></span> Kha Tu Pham. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
